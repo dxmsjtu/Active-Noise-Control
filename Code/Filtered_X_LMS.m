@@ -1,4 +1,4 @@
-
+clear all; close all;
 u= [0.001 0.0025 0.005 0.01 0.1];  %for different step sizes
 
 for j = 1:length(u)

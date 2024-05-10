@@ -1,10 +1,7 @@
-
+clear all; close all;
 u= [0.001 0.0025 0.005 0.01 0.1]; %for different step sizes
-
 for j = 1:length(u)
-
     M=128;      %number of filter weights
-
     %generating a random signal for noise
     N=20000; 
     x=randn(N,1);
@@ -69,5 +66,6 @@ for j = 1:length(u)
     hold on
     plot(y(M:N));
     legend('d(n)','y(n)')
+
 end
 
